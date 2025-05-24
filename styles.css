@@ -1,0 +1,115 @@
+.container{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+}
+.content-container{
+    display: flex;
+    flex-direction: column;
+    height: 80vh;
+    width: 100%;
+}
+.header,
+.footer{
+    background-color: aquamarine;
+    /* padding: 24px; */
+    height: 10vh;
+    /* align-items: center; */
+    align-content: center;
+}
+
+.side{
+    background-color: cadetblue;
+    /* height: 100%; */
+    height: 30vh;
+    /* width: 100%; */
+}
+.main-container{
+    display: flex;
+    flex-direction: column;
+    /* background-color: antiquewhite; */
+    /* width: 100%; */
+    height: 70vh;
+}
+.sub-container{
+    /* background-color: aqua; */
+    order: 1;
+    height: 30vh;
+}
+
+.top{
+    order: 2;
+    padding: 4px;
+    background-color: coral;
+    height: 25vh;
+}
+.bottom{
+    order: 3;
+    padding: 4px;
+    background-color: rgb(179, 236, 65);
+    height: 25vh;
+}
+.sub1{
+    background-color: blueviolet;
+    /* margin-right: 4px; */
+    /* padding: 4px; */
+    height: 10vh;
+}
+.sub2{
+    background-color: burlywood;
+    /* padding: 4px; */
+    height: 10vh;
+}
+.sub3{
+    background-color: rgb(98, 162, 245);
+    /* padding: 4px; */
+    height: 10vh;
+}
+@media (min-width:480px){
+    .content-container{
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+    }
+    .main-container{
+         width: 100%;
+         height: 100vh;
+    }
+    .sub1{
+        width: 33%;
+        height: 40vh;
+    }
+    .sub2{
+        width: 33%;
+        height: 20vh;
+    }
+     .sub3{
+        width: 33%;
+        height: 20vh;
+    }
+    .sub-container{
+        display: flex;
+        flex-direction: row;
+        justify-items: center;
+        width: 100%;
+        height: 10vh;
+        /* gap: 4px;
+        margin: 8px;
+        border: 1px solid rebeccapurple; */
+    }
+    .side{
+        height: 100%;
+        width: 20vh;
+    }
+    .top{
+        order: 1;
+        height: 35vh;
+    }
+    .bottom{
+        height: 35vh;
+    }
+    .side{
+         width: 20vh;
+    }
+}
