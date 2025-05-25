@@ -1,6 +1,10 @@
-<!DOCTYPE html>
-<html>
+<!DOCTYPE html >
+<html lang="en">
     <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta charset="UTF-8">
+        <meta http-equiv="Content-Security-Policy" content="default-src 'self'; style-src 'self' 'unsafe-inline';">
+        <meta name="description" content="Pure HTML,CSS Responsive web page">
         <title>Responsive Containers</title>
         <link rel="stylesheet" href="styles.css" />
     </head>
@@ -8,18 +12,18 @@
         <div class="container">
             <header class="header">Header </header>
             <div class="content-container">
-                <div class="side">Side Container</div>
-                <div class="main-container">
+                <aside class="side">Side Container</aside>
+                <main class="main-container">
                     <div class="top">Top Container</div>
-                    <div class="sub-container">
+                    <section class="sub-container">
                         <div class="sub1">Sub container 1</div>
                         <div class="sub2">Sub container 2</div>
                         <div class="sub3">Sub container 3</div>
-                    </div>
+                    </section>
                     <div class="bottom">Bottom Container</div>
-                </div>
+                </main>
             </div>
-            <footer class="footer">Footer</footer>
+            <div class="footer">Footer</div>
         </div>
         <script src="script.js"></script>
     </body>
